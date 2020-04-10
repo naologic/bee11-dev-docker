@@ -40,6 +40,6 @@ RUN set -xe \
     && mkdir -p $APP_DIR \
     && chown $USER_ID $APP_DIR \
     && chown -R node /usr/local/lib /usr/local/include /usr/local/share /usr/local/bin \
-    && (cd "$USER_HOME_DIR"; su node -c "npm install -g @nestjs/cli@$NEST_CLI_VERSION; npm cache clean --force")
+    && (cd "$USER_HOME_DIR"; su node -c "npm install -g @nestjs/cli@$NEST_CLI_VERSION; npm install -g pm2; npm cache clean --force")
 
 USER $USER_ID
