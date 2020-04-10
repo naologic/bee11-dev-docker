@@ -2,6 +2,10 @@
 
 Docker image for Nest CLI to use as build container.
 
+
+![Docker stats](https://dockeri.co/image/naologic/bee11-dev-docker)
+
+
 Currently this image uses node 12 (npm 6) and node:lts-slim as base distribution.
 
 ## Example usage 
